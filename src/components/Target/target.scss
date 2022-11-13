@@ -6,6 +6,7 @@ $bg-yellow: #FFC046;
 $bg-green: #1CC593;
 
 @import "../../styles/globals";
+@import "../../styles/animations";
 
 .target {
   background-color: $bg-yellow;
@@ -40,6 +41,10 @@ $bg-green: #1CC593;
       position: absolute;
       top: 11rem;
       left: 39%;
+    }
+
+    &-outside {
+      animation: float-up-little infinite 3.5s ease-in-out;
     }
 
   }

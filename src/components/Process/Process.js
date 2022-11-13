@@ -2,6 +2,7 @@ import React from 'react';
 import './process.scss';
 
 export default function Process(props) {
+  const url = process.env.PUBLIC_URL
   return (
     <section className='process'>
       <h2 className='section-title'>挑戰流程</h2>
@@ -24,7 +25,7 @@ export default function Process(props) {
                 </ul>
               </div>
             </div>
-            <img src={item.image} alt=''/>
+            <img src={url + item.image} alt=''/>
             <p className='process-element-text'>每個挑戰主題提供 <strong>一週開發時間</strong><br/>
             未在 <strong>各週一中午 12:00</strong> 前登錄作品者<br/>
             當週即為挑戰失敗！</p>

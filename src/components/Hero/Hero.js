@@ -2,33 +2,34 @@ import React from 'react';
 import './hero.scss';
 
 export default function Hero() {
+  const url = process.env.PUBLIC_URL
   return (
     <section className='hero'>
       <div className='hero-container'>
         <div className='hero-top'>
           <div className='hero-top-start'>
-            <img src='/images/KV-1.png' alt=''/>
+            <img src={url + '/images/KV-1.png'} alt=''/>
           </div>
           <div className='hero-top-end'>
             <span className='tag'>4th</span>
             <h1>The F2E</h1>
-            <img src='/images/KV-2.png' alt='' className='kv-eye'/>
+            <img src={url + '/images/KV-2.png'} alt='' className='kv-eye'/>
           </div>
         </div>
         <div className='hero-middle'>
           <div>
-            <img src='/images/KV-7.png' alt=''/>
+            <img src={url + '/images/KV-7.png'} alt=''/>
           </div>
           <div className='hero-middle-center'>
             <h2>互動式<span className='hero-middle-center-title'>網頁設計</span></h2>
             <div className='hero-middle-center-kv'>
-              <img src='/images/KV-4.png' alt='' className='kv-star'/>
-              <img src='/images/KV-5.png' alt=''/>
+              <img src={url + '/images/KV-4.png'} alt='' className='kv-star'/>
+              <img src={url + '/images/KV-5.png'} alt=''/>
             </div>            
             <p className='hero-middle-center-sub'>HexSchool</p>
           </div>
           <div>
-            <img src='/images/KV-3.png' alt=''/>
+            <img src={url + '/images/KV-3.png'} alt=''/>
           </div>
         </div>
         <div className='hero-bottom'>
@@ -49,7 +50,7 @@ export default function Hero() {
       </div>
       <div className='scroll-down'>
           <p>Scroll down</p>
-          <img src='/images/scroll-down.png' alt='' />
+          <img src={url + '/images/scroll-down.png'} alt='' className='arrow-scroll-down'/>
         </div> 
     </section>
   )

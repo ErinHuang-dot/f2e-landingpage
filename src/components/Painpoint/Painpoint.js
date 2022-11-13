@@ -2,14 +2,15 @@ import React from 'react';
 import './painpoint.scss';
 
 export default function Painpoint() {
+  const url = process.env.PUBLIC_URL
   return (
     <section className='painpoint'>
       <h3 className='section-title'>你是否也有以下困擾？</h3>
       <ul className='pain-list'>
         <li>
           <div className='image-painpoint-g'>
-            <img src='/images/image-painpoint-1.png' alt=''className='image-painpoint1' />
-            <img src='/images/image-painpoint-1-inside.png' alt='' className='image-painpoint1-inside'/>
+            <img src={url + '/images/image-painpoint-1.png'} alt=''className='image-painpoint1' />
+            <img src={url + '/images/image-painpoint-1-inside.png'} alt='' className='image-painpoint1-inside'/>
           </div>
           <div className='pain-item-text'>
             <p>羨慕別人的</p>
@@ -18,8 +19,8 @@ export default function Painpoint() {
         </li>
         <li>
           <div className='image-painpoint-g'>
-            <img src='/images/image-painpoint-2.png' alt=''className='image-painpoint2' />
-            <img src='/images/image-painpoint-2-inside.png' alt='' className='image-painpoint2-inside'/>
+            <img src={url + '/images/image-painpoint-2.png'} alt=''className='image-painpoint2' />
+            <img src={url + '/images/image-painpoint-2-inside.png'} alt='' className='image-painpoint2-inside'/>
           </div>
           <div>
             <p>滿足不了</p>
@@ -28,8 +29,8 @@ export default function Painpoint() {
         </li>
         <li>
           <div className='image-painpoint-g'>
-            <img src='/images/image-painpoint-3.png' alt=''className='image-painpoint3' />
-            <img src='/images/image-painpoint-3-inside.png' alt='' className='image-painpoint3-inside'/>
+            <img src={url + '/images/image-painpoint-3.png'} alt=''className='image-painpoint3' />
+            <img src={url + '/images/image-painpoint-3-inside.png'} alt='' className='image-painpoint3-inside'/>
           </div>
           <div className='pain-item-text'>
             <p>動畫技能樹太雜</p>

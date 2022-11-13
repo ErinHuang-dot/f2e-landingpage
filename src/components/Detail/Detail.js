@@ -2,6 +2,7 @@ import React from 'react';
 import './detail.scss';
 
 export default function Detail(props) {
+  const url = process.env.PUBLIC_URL
   return (
     <section className='detail'>
       <h2 className='section-title'>活動說明</h2>
@@ -10,11 +11,11 @@ export default function Detail(props) {
           return (
             <li className='detail-card' key={item.id}>
               <div className='detail-card-header'>
-                <img src={item.headerImage} alt=''/>
+                <img src={url + item.headerImage} alt=''/>
                 <h4>{item.title}</h4>
               </div>
               <div className='detail-card-body'>
-                <img src={item.bodyImage} alt=''/>
+                <img src={url + item.bodyImage} alt=''/>
                 <ul className='detail-card-text'>
                   {item.content ? item.content.map((content, i) => {
                     return (
@@ -28,17 +29,17 @@ export default function Detail(props) {
         : 'loading'}        
       </ul>
       <div className='detail-bottom'>
-        <img src='/images/detail-start-image.png' alt='' className="detail-bottom-img"/>
+        <img src={url + '/images/detail-start-image.png'} alt='' className="detail-bottom-img"/>
         <div className='detail-bottom-header'>
           <h4 className='detail-bottom-title'>開賽時間</h4>
           <div className='detail-bottom-subtitle border-e-white'>
             <p>UI、團體組開賽</p>
-            <img src='/images/arrow-down.png' alt='' className='arrow-down'/>
+            <img src={url + '/images/arrow-down.png'} alt='' className='arrow-down'/>
             <p>10/31  MON</p>  
           </div>
           <div className='detail-bottom-subtitle'>
             <p>前端組開賽</p>
-            <img src='/images/arrow-down.png' alt='' className='arrow-down'/>
+            <img src={url + '/images/arrow-down.png'} alt='' className='arrow-down'/>
             <p>11/07  MON</p>
           </div>       
         </div>

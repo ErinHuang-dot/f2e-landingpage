@@ -6,6 +6,7 @@ $bg-yellow: #FFC046;
 $bg-green: #1CC593;
 
 @import "../../styles/globals";
+@import "../../styles/animations";
 
 .painpoint {
   padding-top: 4.75rem;
@@ -42,31 +43,29 @@ $bg-green: #1CC593;
       }
     }
 
-    // li:nth-child(even) {
-    //   flex-direction: row-reverse;
-    //   text-align: right;
-    // }
-
     .image-painpoint-g {
       position: relative;
     }
 
     .image-painpoint1-inside {
       position: absolute;
-      top: 4rem;
+      top: 3rem;
       right: 9rem;
+      animation: float-up infinite 1.5s ease-in-out;
     }
 
     .image-painpoint2-inside {
       position: absolute;
-      top: 2rem;
-      right: 7.8rem;
+      top: 1rem;
+      right: 8rem;
+      animation: float-up infinite 1.5s ease-in-out;
     }
 
     .image-painpoint3-inside {
       position: absolute;
-      top: 5rem;
+      top: 3rem;
       left: 5rem;
+      animation: float-up infinite 1.5s ease-in-out;
     }
 
   }

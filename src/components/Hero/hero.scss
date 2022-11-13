@@ -6,6 +6,7 @@ $bg-yellow: #FFC046;
 $bg-green: #1CC593;
 
 @import "../../styles/globals";
+@import "../../styles/animations";
 
 .hero {
   padding-top: 4.75rem;
@@ -96,6 +97,7 @@ $bg-green: #1CC593;
 
       .kv-star {
         margin-right: 0.75rem;
+        animation: spin infinite 10s linear;
       }
 
       &-sub {
@@ -170,5 +172,10 @@ $bg-green: #1CC593;
     font-size: 1.5rem;
     color: #fff;
     text-align: center;
+  }
+
+  .arrow-scroll-down {
+    margin-top: 1rem;
+    animation: float-down infinite 1.5s ease-in-out;
   }
 }

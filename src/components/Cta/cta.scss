@@ -46,5 +46,12 @@ $bg-green: #1CC593;
     padding: 1.25rem 2.5rem;
     background-color: $bg-yellow;
     border: 1px solid $primary-color;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $accent-color;
+    }
   }
 }

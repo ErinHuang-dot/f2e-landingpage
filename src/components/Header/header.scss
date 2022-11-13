@@ -37,6 +37,12 @@
   font-size: 1.125rem;
   font-weight: bold;
   margin-right: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $bg-blue;
+  }
 
   &-primary {
     background-color: #FFC13E;

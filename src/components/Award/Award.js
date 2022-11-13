@@ -2,6 +2,7 @@ import React from 'react';
 import './award.scss';
 
 export default function Award(props) {
+  const url = process.env.PUBLIC_URL
   return (
     <section className='award'>
       <div className='award-container'>
@@ -9,9 +10,9 @@ export default function Award(props) {
         <h2 className='award-title'>還有比賽等著你！</h2>
         <div className='award-top'>
           <div className='award-header'>
-            <img src='/images/arrow-right-grey.png' alt='' className='award-header-img'/>
+            <img src={url + '/images/arrow-right-grey.png'} alt='' className='award-header-img'/>
             <h3 className='award-header-title'>評審機制</h3>
-            <img src='/images/arrow-left-grey.png' alt='' className='award-header-img'/>
+            <img src={url + '/images/arrow-left-grey.png'} alt='' className='award-header-img'/>
           </div>
           <div className='award-top-body border-e-black'>
             <h4>初選</h4>
@@ -24,9 +25,9 @@ export default function Award(props) {
         </div>
         <div className='award-bottom'>
           <div className='award-header'>
-            <img src='/images/arrow-right-grey.png' alt='' className='award-header-img'/>
+            <img src={url + '/images/arrow-right-grey.png'} alt='' className='award-header-img'/>
             <h3 className='award-header-title'>獎項</h3>
-            <img src='/images/arrow-left-grey.png' alt='' className='award-header-img'/>
+            <img src={url + '/images/arrow-left-grey.png'} alt='' className='award-header-img'/>
           </div>
           { props.data ? props.data.map(item => {
             return (

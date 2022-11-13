@@ -2,6 +2,7 @@ import React from 'react';
 import './speakers.scss';
 
 export default function Speakers(props) {
+  const url = process.env.PUBLIC_URL
   return (
     <section className='speakers'>
       <h2 className='section-title'>各界大神接力分享</h2>
@@ -9,7 +10,7 @@ export default function Speakers(props) {
         { props.data ? props.data.map(item => {
           return (
           <li className='speakers-card' key={item.id}>
-            <img src={item.image} alt={item.name} />
+            <img src={url + item.image} alt={item.name} />
             <div className='speakers-card-body'>
               <div className='speakers-card-body-header'>
                 <span className='speakers-card-tag'>{item.tag}</span>
@@ -17,15 +18,14 @@ export default function Speakers(props) {
                 <p className='speakers-card-subtitle'>{item.date}</p>
               </div>
               <div className='speakers-card-body-center'>
-                <img src='/images/arrow-right-small.png' alt='' />
+                <img src={url + '/images/arrow-right-small.png'} alt='' />
                 <h4>{item.name}</h4>
               </div>
               <p className='speakers-card-body-footer'>{item.position}</p>
             </div>
           </li>
           )})
-        : 'loading'}
-        
+        : 'loading'}        
       </ul>
     </section>
   )
