@@ -1,0 +1,44 @@
+@import "../../styles/globals.scss";
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1C1A24;
+  padding-block: 1.625rem;
+}
+
+.logo {
+  font-family: 'Audiowide', cursive;
+  font-size: 2.375rem;
+  margin-right: auto;
+}
+
+.nav {
+  font-size: 1.125rem;
+  font-weight: bold;
+  display: flex;
+
+  &-break {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.btn-group {
+  margin-left: 2.25rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-right: 12px;
+
+  &-primary {
+    background-color: #FFC13E;
+  }
+}

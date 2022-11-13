@@ -1,0 +1,50 @@
+$primary-color: #1C1A24;
+$secondary-color: #2938EA;
+$accent-color: #FFC13E;
+$bg-blue: #456EFF;
+$bg-yellow: #FFC046;
+$bg-green: #1CC593;
+
+@import "../../styles/globals";
+
+.cta {
+  background-color: $primary-color;
+
+  &-container {
+    padding-block: 4.25rem;
+    margin: 0 auto;
+    max-width: 70.625rem;
+    display: flex;
+  }
+
+  &-content {
+    flex-grow: 1;
+    padding: 2.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  &-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1.125rem;
+  }
+
+  &-img {
+    background-color: $bg-blue;
+  }
+
+  &-btn {
+    font-size: 2.25rem;
+    font-weight: bold;
+    padding: 1.25rem 2.5rem;
+    background-color: $bg-yellow;
+    border: 1px solid $primary-color;
+  }
+}

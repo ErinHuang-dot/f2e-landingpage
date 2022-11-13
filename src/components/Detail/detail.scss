@@ -1,0 +1,110 @@
+$primary-color: #1C1A24;
+$secondary-color: #2938EA;
+$accent-color: #FFC13E;
+$bg-blue: #456EFF;
+$bg-yellow: #FFC046;
+$bg-green: #1CC593;
+
+@import "../../styles/globals";
+
+.detail {
+  background-color: $primary-color;
+  padding-block: 5.625rem;
+
+  &-card-list {
+    margin: 4.25rem auto;
+    display: flex;
+    justify-content: center;
+
+    li:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &-card {
+    width: 24rem;
+    height: 23.25rem;
+    border: 1.5px solid #fff;
+
+    &-header {
+      background-color: $bg-yellow;
+      padding-block: 0.75rem;
+      font-size: 1.625rem;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 0.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 1rem;
+      }
+    }
+
+    &-body {
+      text-align: left;
+      display: flex;
+    }
+
+    &-text {
+      flex-grow: 1;
+      background-color: #fcfcfc;
+      list-style: disc;     
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 1.6;
+      color: $primary-color;
+      padding: 2.5rem 2.6rem;
+    }
+  }
+
+  &-bottom {
+    width: 68.125rem;
+    border: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 1.625rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+
+    &-header {
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-title {
+      background-color: $bg-yellow;
+      color: $primary-color;
+      width: 100%;
+      padding-block: 1.875rem;
+      text-align: center;
+    }
+
+    &-subtitle {
+      width: 50%;
+      height: 13.75rem;
+      color: #fff;
+      padding: 1.75rem 2.875rem;
+      text-align: right;
+    }
+
+    &-text {
+      width: 100%;
+      background-color: #fff;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: normal;
+      padding-block: 1.25rem;
+    }
+
+    .arrow-down {
+      padding-block: 1.25rem;
+    }
+  }
+
+ 
+}

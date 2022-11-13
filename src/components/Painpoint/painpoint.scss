@@ -1,0 +1,73 @@
+$primary-color: #1C1A24;
+$secondary-color: #2938EA;
+$accent-color: #FFC13E;
+$bg-blue: #456EFF;
+$bg-yellow: #FFC046;
+$bg-green: #1CC593;
+
+@import "../../styles/globals";
+
+.painpoint {
+  padding-top: 4.75rem;
+  padding-bottom: 8.125rem;
+  background-color: $primary-color;
+
+  .pain-list {
+    font-size: 3.625rem;
+    font-weight: bold;
+    color: $bg-blue;
+    letter-spacing: 0.5rem;
+    margin-top: 5.625rem;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 7.5rem;
+      }
+    }
+
+    .pain-item-text {
+      text-align: left;
+
+      p {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+    // li:nth-child(even) {
+    //   flex-direction: row-reverse;
+    //   text-align: right;
+    // }
+
+    .image-painpoint-g {
+      position: relative;
+    }
+
+    .image-painpoint1-inside {
+      position: absolute;
+      top: 4rem;
+      right: 9rem;
+    }
+
+    .image-painpoint2-inside {
+      position: absolute;
+      top: 2rem;
+      right: 7.8rem;
+    }
+
+    .image-painpoint3-inside {
+      position: absolute;
+      top: 5rem;
+      left: 5rem;
+    }
+
+  }
+}

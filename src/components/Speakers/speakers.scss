@@ -1,0 +1,94 @@
+$primary-color: #1C1A24;
+$secondary-color: #2938EA;
+$accent-color: #FFC13E;
+$bg-blue: #456EFF;
+$bg-yellow: #FFC046;
+$bg-green: #1CC593;
+
+@import "../../styles/globals";
+
+.speakers {
+  background-color: $bg-blue;
+  padding-block: 5.625rem;
+  text-align: center;
+
+  &-card-list {
+    margin-top: 4.25rem;
+
+    li:not(:last-child) {
+      margin-bottom: 4.25rem;
+    }
+  }
+
+  &-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+
+    &-body {
+      width: 32.75rem;
+      height: 19.75rem;
+
+
+      &-header {
+        height: 14.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 1.25rem;
+        background-color: #fff;
+        border-top-right-radius: 6.25rem;
+      }
+
+      &-center, &-footer {
+        background-color: $primary-color;
+        padding: 0.75rem 1.25rem;
+      }
+
+      &-center {
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: $accent-color;
+        letter-spacing: 0.2rem;
+        border-bottom: .5px solid #fff;
+
+        h4 {
+          margin-left: 0.75rem;
+        }
+      }
+
+      &-footer {
+        background-color: $primary-color;
+        font-size: 0.875rem;
+        color: #fff;
+        letter-spacing: 0.1rem;
+        text-align: left;
+      }
+    }
+
+    &-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    &-subtitle {
+      font-size: 1.125rem;
+      font-weight: 900;
+      letter-spacing: 0.1rem;
+    }
+
+    &-tag {
+      background-color: $bg-blue;
+      color: #fff;
+      padding: 0.125rem 0.625rem;
+      margin: 0 0 auto;
+      letter-spacing: 0.1rem;
+    }
+  }
+}

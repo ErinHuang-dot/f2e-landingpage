@@ -1,0 +1,116 @@
+$primary-color: #1C1A24;
+$secondary-color: #2938EA;
+$accent-color: #FFC13E;
+$bg-blue: #456EFF;
+$bg-yellow: #FFC046;
+$bg-green: #1CC593;
+
+@import "../../styles/globals";
+
+.challenge {
+  background-color: $bg-blue;
+  text-align: center;
+  padding-block: 5.625rem;
+
+  &-title {
+    margin-bottom: 1.125rem;
+  }
+
+  &-subtitle {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0.5;
+    margin-bottom: 3rem;
+  }
+
+  &-card-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-card-tag {
+    background-color: #fff;
+    border: 6px solid $bg-yellow;
+    border-radius: 9px 9px 0 0;
+    width: 10.25rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+
+    span {
+      display: inline-block;
+      font-size: 1.14rem;
+      -webkit-text-stroke: 1px $primary-color;
+      -webkit-text-fill-color: transparent;
+      vertical-align: middle;
+      margin-right: 0.6rem;
+    }
+  }
+
+  &-card {
+    margin-right: 9.625rem;
+  }
+
+  &-card-body {
+    background-color: $bg-yellow;
+    width: 25.5rem;
+    height: 30.5rem;
+    position: relative;
+    overflow: hidden;
+    padding: 1.425rem;
+    border-radius: 0 9px 9px 9px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    .challenge-card-title {
+      font-weight: 900;
+      font-size: 2.625rem;
+      letter-spacing: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .challenge-card-subtitle {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.3rem;
+      background-color: #fff;
+      border: 1px solid $primary-color;
+      border-radius: 65.75px;
+      padding: 0.625rem 1.625rem;
+    }
+
+    .challenge-card-img {
+      position: absolute;
+      top: 10.2rem;
+      right: -4rem;
+    }
+  }
+
+  .challenge-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto 0 0;
+    font-weight: bold;
+
+    .challenge-card-footer-s {
+      display: flex;
+      align-items: flex-end;
+
+      img {
+        margin-right: 9px;
+      }
+
+      small {
+        font-weight: normal;
+      }
+    }
+
+    .challenge-card-footer-e {
+      img {
+        margin-left: 8px;
+      }
+    }
+  }
+}

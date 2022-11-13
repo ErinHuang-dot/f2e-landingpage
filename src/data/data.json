@@ -1,0 +1,185 @@
+{
+  "Challenge": [
+    {
+      "id": "01",
+      "title1": "The F2E",
+      "title2": "活動網站設計",
+      "tag": "視差滾動",
+      "sponsor": "版塊設計",
+      "firstImage": "/images/week1-image-1.png",
+      "hoverImage": "/images/week1-image-2.png",
+      "logoImage": "/images/week1-logo.png"
+    },
+    {
+      "id": "02",
+      "title1": "今晚，",
+      "title2": "我想來點點簽",
+      "tag": "Canvas",
+      "sponsor": "凱鈿行動科技",
+      "firstImage": "/images/week2-image-1.png",
+      "hoverImage": "/images/week2-image-2.png",
+      "logoImage": "/images/week2-logo.png"
+    },
+    {
+      "id": "03",
+      "title1": "Scrum",
+      "title2": "新手村",
+      "tag": "JS draggable",
+      "sponsor": "鈦坦科技",
+      "firstImage": "/images/week3-image-1.png",
+      "hoverImage": "/images/week3-image-2.png",
+      "logoImage": "/images/week3-logo.png"
+    }
+  ],
+  "Detail": [
+    {
+      "id": "01",
+      "title": "報名時間",
+      "content": [
+        "10/13 ~ 10/30",
+        "截止前可修改報名組別"
+      ],
+      "headerImage": "/images/detail-register-image.png",
+      "bodyImage": "/images/text-registration.png"
+    },
+    {
+      "id": "02",
+      "title": "登錄作品",
+      "content": [
+        "依賽程登錄作品",
+        "10/31(一) UI、團體組開賽",
+        "11/7(一) 前端組開賽"
+      ],
+      "headerImage": "/images/detail-upload-image.png",
+      "bodyImage": "/images/text-uploading.png"
+    },
+    {
+      "id": "03",
+      "title": "額外競賽",
+      "content": [
+        "主題豐厚獎金等著你"
+      ],
+      "headerImage": "/images/detail-award-image.png",
+      "bodyImage": "/images/text-competition.png"
+    }
+
+  ],
+  "Process": [
+    {
+      "id": "01",
+      "title": "每週一",
+      "subtitle": "獲得新主題",
+      "time": "中午 12:00",
+      "participants": [
+        "UI 設計師",
+        "團體組"
+      ],
+      "image": "/images/process-image-1.png"
+    },
+    {
+      "id": "02",
+      "title": "隔週一",
+      "subtitle": "UI 組、團體組登錄 UI作品；前端組認領設計稿",
+      "time": "中午 12:00",
+      "participants": [
+        "UI 設計師",
+        "前端工程師",
+        "團體組"
+      ],
+      "image": "/images/process-image-2.png"
+    },
+    {
+      "id": "03",
+      "title": "再隔週一",
+      "subtitle": "前端組、團體組登錄作品",
+      "time": "中午 12:00",
+      "participants": [
+        "前端工程師",
+        "團體組"
+      ],
+      "image": "/images/process-image-3.png"
+    }
+  ],
+  "Award": [
+    {
+      "id": "01",
+      "title": "初選佳作",
+      "prize": "數位獎狀",
+      "unit": "",
+      "amount": "共 60 位",
+      "background": "#FFC046"
+    },
+    {
+      "id": "02",
+      "title": "個人企業獎",
+      "prize": "NTD 3,000",
+      "unit": "位",
+      "amount": "共 6 位",
+      "background": "#456EFF"
+    },
+    {
+      "id": "03",
+      "title": "團體企業獎",
+      "prize": "NTD 10,000",
+      "unit": "組",
+      "amount": "共 3 位",
+      "background": "#1CC593"
+    }
+  ],
+  "Sponsors": [
+    {
+      "id": "01",
+      "name": "凱鈿科技",
+      "image": "/images/sponsor-logo-1.png"
+    },
+    {
+      "id": "02",
+      "name": "鈦坦科技",
+      "image": "/images/sponsor-logo-2.png"
+    },
+    {
+      "id": "03",
+      "name": "版塊設計",
+      "image": "/images/sponsor-logo-3.png"
+    }
+  ],
+  "Speakers": [
+    {
+      "id": "01",
+      "name": "李明",
+      "position": "版塊設計創辦人暨設計總監",
+      "topic": "網站的動態趨勢",
+      "date": "11/3（四）20:00 ~ 21:30",
+      "tag": "免費公開場",
+      "image": "/images/speaker-李明.png"
+    },
+    {
+      "id": "02",
+      "name": "Leo",
+      "position": "Angular Taiwan 傳教士",
+      "topic": "jQuery 也可以做到的互動效果",
+      "date": "11/10（四）20:00 ~ 21:30",
+      "tag": "免費公開場",
+      "image": "/images/speaker-Leo.png"
+    },
+    {
+      "id": "03",
+      "name": "邱繼緯",
+      "position": "前端工程師",
+      "topic": "做事不能拖拖拉拉，但網頁可以：draggable.js 介紹",
+      "date": "11/17（四）20:00 ~ 21:30",
+      "tag": "免費公開場",
+      "image": "/images/speaker-邱繼緯.png"
+    },
+    {
+      "id": "04",
+      "name": "吳哲宇",
+      "position": "墨雨互動設計 創辦人、生成式藝術家",
+      "topic": "互動式網頁設計工程師該具備哪些技能？",
+      "date": "11/24（四）20:00 ~ 21:30",
+      "tag": "免費公開場",
+      "image": "/images/speaker-吳哲宇.png"
+    }
+  ]
+
+}

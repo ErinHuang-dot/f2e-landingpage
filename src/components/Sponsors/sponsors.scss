@@ -1,0 +1,38 @@
+$primary-color: #1C1A24;
+$secondary-color: #2938EA;
+$accent-color: #FFC13E;
+$bg-blue: #456EFF;
+$bg-yellow: #FFC046;
+$bg-green: #1CC593;
+
+@import "../../styles/globals";
+
+.sponsor {
+  &-container {
+    max-width: 68.125rem;
+    padding-block: 6rem 5.625rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &-title-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.75rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    margin: 0 1.25rem;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

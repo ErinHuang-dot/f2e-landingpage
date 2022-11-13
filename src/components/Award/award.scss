@@ -1,0 +1,119 @@
+$primary-color: #1C1A24;
+$secondary-color: #2938EA;
+$accent-color: #FFC13E;
+$bg-blue: #456EFF;
+$bg-yellow: #FFC046;
+$bg-green: #1CC593;
+
+@import "../../styles/globals";
+
+.award {
+  background-color: $bg-yellow;
+
+  &-container {
+    max-width: 68.125rem;
+    padding-block: 5.625rem 7rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &-title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    margin-bottom: 7rem;
+  }
+
+  &-subtitle {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    opacity: 0.7;
+    margin-bottom: 1.125rem;
+  }
+
+  &-top {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid $primary-color;
+    margin-bottom: 6.75rem;
+
+    &-body {
+      width: 50%;
+      text-align: left;
+      background-color: #fff;
+
+      h4 {
+        padding: 0.75rem 2.25rem;
+        border-bottom: 1px solid $primary-color;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+      }
+
+      p {
+        padding: 1.25rem 2.25rem;
+        align-self: center;
+        font-size: 1.25rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+
+  &-header {
+    width: 100%;
+    background-color: $primary-color;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $accent-color;
+    letter-spacing: 0.3rem;
+    padding-block: 1.25rem;
+    display: flex;
+    justify-content: center;
+
+    &-title {
+      margin: 0 2.5rem;
+    }
+
+    &-img {
+      object-fit: contain;
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid $primary-color;
+    margin-bottom: 2.625rem;
+
+    &-body {
+      width: 33.3333%;
+
+      &-content {
+        padding-block: 5.625rem 3.75rem;
+        border-radius: 45% 45% 0 0;
+        background-color: #fff;
+        font-size: 2.875rem;
+        font-weight: bold;
+
+        h3 {
+          margin-bottom: 2.75rem;
+          font-size: inherit;
+        }
+
+        p {
+          margin-top: 2.75rem;
+        }
+
+        span {
+          font-size: 1.625rem;
+        }
+      }
+
+      &-footer {
+        background-color: $secondary-color;
+        color: #fff;
+        font-size: 2rem;
+        padding-block: .5rem;
+      }
+    }
+  }
+}
