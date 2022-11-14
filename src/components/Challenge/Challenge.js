@@ -4,7 +4,7 @@ import './challenge.scss';
 export default function Challenge(props) {
   const url = process.env.PUBLIC_URL
   return (
-    <section className='challenge' id='#challenge'>
+    <section className='challenge' id='challenge'>
       <h2 className='section-title'>年度最強合作</h2>
       <h2 className='section-title challenge-title'>三大主題來襲</h2>
       <p className='challenge-subtitle'>各路廠商強強聯手，共同設計出接地氣的網頁互動挑戰關卡</p>

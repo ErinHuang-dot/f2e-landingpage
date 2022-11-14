@@ -8,19 +8,20 @@ export default function Hero() {
       <div className='hero-container'>
         <div className='hero-top'>
           <div className='hero-top-start'>
-            <img src={url + '/images/KV-1.png'} alt=''/>
+            <img src={url + '/images/KV-1.png'} alt='' className='img-responsive'/>
           </div>
           <div className='hero-top-end'>
             <span className='tag'>4th</span>
             <h1>The F2E</h1>
-            <img src={url + '/images/KV-2.png'} alt='' className='kv-eye'/>
+            <img src={url + '/images/KV-2.png'} alt='' className='kv-eye img-responsive'/>
           </div>
         </div>
         <div className='hero-middle'>
-          <div>
-            <img src={url + '/images/KV-7.png'} alt=''/>
+          
+          <div className='hero-middle-start border-e-white'>
+            <img src={url + '/images/KV-7.png'} alt='' className='hero-middle-img-s'/>
           </div>
-          <div className='hero-middle-center'>
+          <div className='hero-middle-center border-e-white'>
             <h2>互動式<span className='hero-middle-center-title'>網頁設計</span></h2>
             <div className='hero-middle-center-kv'>
               <img src={url + '/images/KV-4.png'} alt='' className='kv-star'/>
@@ -28,8 +29,8 @@ export default function Hero() {
             </div>            
             <p className='hero-middle-center-sub'>HexSchool</p>
           </div>
-          <div>
-            <img src={url + '/images/KV-3.png'} alt=''/>
+          <div className='hero-middle-end'>
+            <img src={url + '/images/KV-3.png'} alt='' className='hero-middle-img-e'/>
           </div>
         </div>
         <div className='hero-bottom'>

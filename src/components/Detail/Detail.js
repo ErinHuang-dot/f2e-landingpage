@@ -16,7 +16,14 @@ export default function Detail(props) {
               </div>
               <div className='detail-card-body'>
                 <img src={url + item.bodyImage} alt=''/>
-                <ul className='detail-card-text'>
+                <ul 
+                  className='detail-card-text' 
+                  style={{
+                    backgroundImage: `url(${process.env.PUBLIC_URL + '/images/bg-square.png'})`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}>
                   {item.content ? item.content.map((content, i) => {
                     return (
                       <li key={i}>{content}</li>
@@ -29,7 +36,7 @@ export default function Detail(props) {
         : 'loading'}        
       </ul>
       <div className='detail-bottom'>
-        <img src={url + '/images/detail-start-image.png'} alt='' className="detail-bottom-img"/>
+        <img src={url + '/images/detail-start-image.png'} alt='' className="detail-bottom-img border-e-white"/>
         <div className='detail-bottom-header'>
           <h4 className='detail-bottom-title'>開賽時間</h4>
           <div className='detail-bottom-subtitle border-e-white'>

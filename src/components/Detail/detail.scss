@@ -25,6 +25,7 @@ $bg-green: #1CC593;
     width: 24rem;
     height: 23.25rem;
     border: 1.5px solid #fff;
+    overflow: hidden;
 
     &-header {
       background-color: $bg-yellow;
@@ -45,11 +46,12 @@ $bg-green: #1CC593;
     &-body {
       text-align: left;
       display: flex;
+      border-top: 1px solid #fff;
     }
 
     &-text {
       flex-grow: 1;
-      background-color: #fcfcfc;
+      // background-color: #fcfcfc;
       list-style: disc;     
       font-size: 1.125rem;
       font-weight: 700;

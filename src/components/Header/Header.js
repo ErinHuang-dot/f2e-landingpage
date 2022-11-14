@@ -8,13 +8,16 @@ export default function Header() {
       <h3 className='logo'>The F2E</h3>
       <ul className='nav'>
         <li className='nav-item'>
-          關卡資訊
+          <a href='#challenge'>關卡資訊</a>
           <img src={url + '/images/star-nav.svg'} className='nav-break' alt=''/>
         </li>
-        <li className='nav-item'>攻略資源
+        <li className='nav-item'>
+          <a href='/'>攻略資源</a>
           <img src={url + '/images/star-nav.svg'} className='nav-break' alt=''/>
         </li>
-        <li className='nav-item'>求職專區</li>
+        <li className='nav-item'>
+          <a href='/'>求職專區</a>
+        </li>
       </ul>
       <div className='btn-group'>
         <button className='btn btn-primary'>註冊報名</button>

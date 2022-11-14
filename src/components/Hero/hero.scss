@@ -65,8 +65,21 @@ $bg-green: #1CC593;
   }
 
   &-middle {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+
+    &-start {
+      width: 21.7%;
+      background-color: $bg-yellow;
+    }
+
+    &-end {
+      width: 16.15%;
+    }
+
+    &-img-s, &-img-e {
+      max-width: 100%;
+    }
 
     &-center {
       flex-grow: 1;
@@ -101,7 +114,6 @@ $bg-green: #1CC593;
       }
 
       &-sub {
-        // width: 70%;
         flex-grow: 1;
         background-color: $bg-green;
         font-size: 2.375rem;
